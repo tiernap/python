@@ -1,4 +1,4 @@
-linelen = 51
+linelen = 50
 string1 = 'title'
 string2 = 'A Option a'
 string3 = 'b option b'
@@ -8,14 +8,12 @@ print("<"+" "*(linelen-2)+">")
 print("<"+" "*(linelen-2)+">")
 print("<"+" "*(linelen-2)+">")
 print("<"+" "*(linelen-2)+">")
-
-
-print("<"+" "*((linelen/2)-(len(string1)/2)-1)+string1+" "*((linelen/2)-(len(string1)/2)-1)+">")
+print("<{0:^48}>".format(string1))
 print("<"+" "*(linelen-2)+">")
 print("<"+" "*(linelen-2)+">")
-print("<"+" "*((linelen/2)-(len(string2)/2))+string2+" "*((linelen/2)-(len(string2)/2))+">")
-print("<"+" "*((linelen/2)-(len(string3)/2))+string3+" "*((linelen/2)-(len(string3)/2))+">")
-print("<"+" "*((linelen/2)-(len(string4)/2))+string4+" "*((linelen/2)-(len(string4)/2))+">")
+print("<  {0:<46}>".format(string2))
+print("<  {0:<46}>".format(string3))
+print("<  {0:<46}>".format(string4))
 print("<"+" "*(linelen-2)+">")
 print("<"+" "*(linelen-2)+">")
 print("x"*linelen)
