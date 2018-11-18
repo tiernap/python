@@ -13,8 +13,8 @@ print("Second instance of word 'python' is at position {}".format(python_mission
 print("The word returned is: {}".format(python_mission[25:34]))
 
 # Find out if the word ‘diverse’ is in the mission statement
-print("is 'diverse' present? {}".format(python_mission.find('diverse')>0))
-print("is 'diverse' present? {}".format(python_mission.count('diverse')>0))
+print("is 'diverse' present? {}".format(python_mission.find('diverse') > 0))
+print("is 'diverse' present? {}".format(python_mission.count('diverse') > 0))
 
 # check if "12345" is numeric
 string = '12345'
