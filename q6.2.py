@@ -25,8 +25,7 @@ def dir_size(directory):
         print("The Contents of {} directory is: {}".format(directory, total_size))
 
         # if file_name is itself a directory, run nested function
-        if os.path.isdir(os.path.normpath(directory+"/"+file_name)):
-            dir_size(os.path.normpath(directory+"/"+file_name))
-
+        if os.path.isdir(os.path.join(directory, file_name)):
+           dir_size(os.path.join(directory, file_name))
 
 main()
